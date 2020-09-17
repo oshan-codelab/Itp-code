@@ -1,5 +1,5 @@
 import React from "react";
-import "./ok.css";
+import "./order.css";
 
 function CreateDeilivaryToken() {
   return (
