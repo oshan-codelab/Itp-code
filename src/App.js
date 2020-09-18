@@ -4,6 +4,7 @@ import OrderDelivery from './components/Delivery/OrderDelivery';
 import Dtable from './components/Delivery/Dtable';
 import Headerbar from  './components/Headerbar';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
      
         <Headerbar />
        
-        <OrderDelivery />
+       <Dtable />
+        <Footer />
       
      
     </div>

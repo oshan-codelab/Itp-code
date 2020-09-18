@@ -1,80 +1,233 @@
+import React from 'react';
 
-import React, { Component } from "react";
-import "./table.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { faEdit } from "@fortawesome/free-solid-svg-icons";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 
-
-
-
-function OrderDetails(params) {
-
-  return (
-    <div>
-      <div align="center">
-        
-        <button className="btn1">Add Order </button>
-        <button className="btn1">Reportr</button>
-      </div>
-
-      <br></br>
-      <div className="row">
-        
-
-        <div className="col-sm">
-          <table class="table">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">Order No</th>
-                <th scope="col">Customer Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Address</th>
-                <th scope="col">Phone Number</th>
-                <th scope="col">Date</th>
-
-                <th scope="col">Value</th>
-                <th scope="col"></th>
-                
-
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">001</th>
-                <td>oshan devinda</td>
-                <td>devinda@gmail.com</td>
-                <td>yakkala</td>
-                <td>0750191639</td>
-                <td>1999/10/07</td>
-                <td>500.00</td>
-                <td scope="row">
-        
-        <div class="form-group row">
-
-         <div >
-          <button >UPDATE</button>
-         </div>
-
-         <div >
-          <button >DELETE</button>
-         </div>
-
-        </div>
-       
-
-      </td>
-              </tr>
-           
-            </tbody>
-          </table>
-        </div>
-       
-          
-        </div>
-      </div>
-
-      
+function Expensespage(){
+    return(
+<div class="acnav">
+    <table className="theight">
+    <tr>
+        <th>Delivery ID</th>
+        <th>Order ID</th>
+        <th>Rider ID </th>
+        <th>Date</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+    <td>d001</td>
+    <td>d001</td>
+    <td>d001</td>
+    <td>06/07/2020</td>
+    <td>delivered</td>
+    
+    <td>
+    <div align="right">
    
-  );
+              <FontAwesomeIcon icon={faEdit} color="black" className="mr-2" />
+             
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faTrash}
+                color="black"
+                className="mr-2"
+                data-toggle="modal"
+                data-target="#myModal3"
+              /></a>
 
+              <div class="modal fade" id="myModal3" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 className="modal-title">Are you sure?</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p align="left">Do you want delete.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+    </td>
+    </tr>
+
+    <tr>
+    <td>d001</td>
+    <td>d001</td>
+    <td>d001</td>
+    <td>06/07/2020</td>
+    <td>delivered</td>
+    <td>
+    <div align="right">
+   
+              <FontAwesomeIcon icon={faEdit} color="black" className="mr-2" />
+              
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faTrash}
+                color="black"
+                className="mr-2"
+                data-toggle="modal"
+                data-target="#myModal3"
+              /></a>
+
+              <div class="modal fade" id="myModal3" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 className="modal-title">Are you sure?</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p align="left">Do you want delete.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+    </td>
+    </tr>
+
+    <tr>
+    <td>d001</td>
+    <td>d001</td>
+    <td>d001</td>
+    <td>06/07/2020</td>
+    <td>delivered</td>
+    <td>
+    <div align="right">
+   
+              <FontAwesomeIcon icon={faEdit} color="black" className="mr-2" />
+             
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faTrash}
+                color="black"
+                className="mr-2"
+                data-toggle="modal"
+                data-target="#myModal3"
+              /></a>
+
+              <div class="modal fade" id="myModal3" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 className="modal-title">Are you sure?</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p align="left">Do you want delete.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+    </td>
+    </tr>
+
+    <tr>
+    <td>d001</td>
+    <td>d001</td>
+    <td>d001</td>
+    <td>06/07/2020</td>
+    <td>delivered</td>
+    <td>
+    <div align="right">
+   
+              <FontAwesomeIcon icon={faEdit} color="black" className="mr-2" />
+              
+            <a href="#">
+              <FontAwesomeIcon
+                icon={faTrash}
+                color="black"
+                className="mr-2"
+                data-toggle="modal"
+                data-target="#myModal3"
+              /></a>
+
+              <div class="modal fade" id="myModal3" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 className="modal-title">Are you sure?</h4>
+                      <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p align="left">Do you want delete.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-default"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-danger">
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+    </td>
+    </tr>
+    <div class="left"><button class="button" variant="contained" color="secondary" style={{align:"right"}}><b>Print</b></button></div>
+    </table>
+
+
+</div>
+    );
 }
-export default OrderDetails;
+
+export default Expensespage;
